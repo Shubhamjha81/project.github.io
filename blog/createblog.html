@@ -1,0 +1,36 @@
+<?php
+
+    include "bloglogic.php";
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+
+    <link href="mystyle.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row uppercont">
+            <h2 class="createblog-title">Add a new blog</h4>
+            <h6 class="createblog-title">Share your thoughts, tips and experiences....</h6>
+        </div>
+
+        <div class="formcontent text-center">
+            <form method="POST">
+                <input type="text" placeholder="Enter Username" class="form-control my-3 bg-light text-center" name="uname">    
+                <input type="text" placeholder="Enter Blog Title Here" class="form-control my-3 bg-light text-center" name="title">
+                <textarea name="content" placeholder="Enter Blog Content Here" class="form-control my-3 bg-light" cols="30" rows="10"></textarea>
+                <button class="btn btn-light" name="new_post">Add Blog</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

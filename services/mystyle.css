@@ -1,0 +1,221 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    color: black;
+    background-image:linear-gradient(to right, #2BCD64, #02290F);
+	font-size: 16px;
+    line-height: 1.6em;
+}
+
+
+/* Services css starts*/
+
+.aboutus{
+    padding-top: 80px;
+}
+
+.aboutus-text{
+    font-family:sans-serif;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.facilities-box{
+    text-align: center;
+    padding:20px;
+}
+
+.img1{
+    height: 45%;
+    width: 85%;
+}
+
+
+.titletext1{
+    font-family: 'Chakra Petch', sans-serif;
+    color: yellow;
+}
+
+@media only screen and (min-width:992px) {
+    .aboutus{
+        padding-left: 80px;
+    }
+
+    .content-aboutus{
+        padding-left: 80px;
+    }
+}
+
+/*  Services css ends  */
+
+
+.navcont{
+    padding-top: 12px;
+}
+
+.titletext{
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(224, 224, 228);
+}
+
+
+.titletextp{
+    color: rgb(231, 233, 236);
+    font-size:medium;
+}
+
+#carouselid{
+    width:95%;
+}
+
+.litem{
+    padding-left: 15px;
+}
+
+.navbarbtn{
+    background-color:whitesmoke;
+}
+
+
+
+
+
+
+
+.img3{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footerlinks{
+    text-decoration:none;
+    color: #e4d6d6
+}
+
+.listedited{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.textwhite{
+    color:#e4d6d6;
+}
+
+#image1,#image3, #image4, #content{
+    opacity:0;
+    position: relative;
+}
+
+.iconcol{
+    color: rgb(193, 212, 14);
+}
+
+.iconcol2{
+    color: #d1e233;
+}
+
+.iconcol3{
+    color:ghostwhite;
+}
+
+.info{
+    color:ghostwhite;
+}
+
+.h-light{
+    color:honeydew;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 24px;
+    color: white;
+}
+
+h5 {
+    font-size: 24px;
+    color: white;
+}
+
+.bg-skin{
+    background: #0062cc;
+    
+}
+
+.list1{
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-weight: bolder;
+}
+
+.service-box {
+	margin-bottom: 40px;
+}
+
+.service-icon {
+	margin: 0 20px 20px 0;
+	float: left;
+}	
+
+.service-desc h5 {
+	margin-bottom: 10px;
+}
+
+
+.company-social a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.social-vimeo, .social-twitter, .social-google, .social-facebook, .social-dribble, .social-deviantart{
+    display: inline-block;
+    padding:2px
+}
+
+.company-social .social-facebook a i{background: #3873ae;}
+.company-social .social-twitter a i{background: #62c6f8;}
+.company-social .social-dribble a i{background: #d74980;}
+.company-social .social-deviantart a i{background: #8da356;}
+.company-social .social-google a i {background: #000;}
+.company-social .social-vimeo a i {background: #51a6d3;}
+.company-social .social-facebook a:hover i {background: #4893ce;}
+.company-social .social-twitter a:hover i {background: #82e6ff;}
+.company-social .social-dribble a:hover i {background: #f769a0;}
+.company-social .social-deviantart a:hover i {background: #adc376;}
+.company-social .social-google a:hover i {background: #333;}
+.company-social .social-vimeo a:hover i {background: #71c6f3;}
+
+@media only screen and (max-width:576px) {
+    h5{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .navbarbtn{
+        font-size: 10px;
+        margin-right: 15px;
+    }
+    
+    .litem{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .footeralign{
+        padding-left: 20px;
+    }
+}
+

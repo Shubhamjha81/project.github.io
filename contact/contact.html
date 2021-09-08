@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Contact Us</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="contact.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container navcont">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="../index.html" class="navbar-brand"><h5 class="titletext"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp HEAL VIBE HOSPITAL</h5></a>
+          <button class="navbar-toggler navbarbtn" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>    
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu" >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item litem"> <a href="../index.html" class="nav-link active"><p class="titletextp">Home</p></a> </li>
+              <li class="nav-item litem"> <a href="../services/services.html" class="nav-link"><p class="titletextp">Services</p></a></li>
+              <li class="nav-item litem"> <a href="../blog/blog.html" class="nav-link"><p class="titletextp">Blog</p></a></li>
+              <li class="nav-item litem"> <a href="../account/account.html" class="nav-link"><p class="titletextp">Account</p></a> </li>
+              <li class="nav-item litem"> <a href="../contact/contact.html" class="nav-link"><p class="titletextp">Contact</p></a> </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <div class="container contact-form" style="font-family: 'IBM Plex Sans', sans-serif;">
+        <div class="contact-image">
+          <img src="rocket-icon.png" alt="rocket_contact">
+        </div>
+          
+        <form method="post" action="contact.php">
+            <h3>Drop Us a Message</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" onkeydown="return alphaOnly(event);" required/>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required />
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" minlength="10" maxlength="10" required />
+                    </div>
+                </div>
+                      
+                <div class="col-md-6">
+                    <div class="form-group" >
+                      <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;">
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact"   value="Send Message" />
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <br>
+            <div class="widget">
+              <h5>About Heal Vibe HOSPITAL</h5>
+              <p class="textwhite footeralign" >
+                Every treatment at our hospital is done using the most advanced medical technology and equipment. Patients are treated at the hands of super specialists who have been treating patients for over 8-10 years.
+              </p>
+            </div>
+            <div class="widget">
+              <h5>Information</h5>
+              <ul class="listedited">
+                <li><a class="footerlinks footeralign" href="#">Home</a></li>
+                <li><a class="footerlinks footeralign" href="#">Laboratory</a></li>
+                <li><a class="footerlinks footeralign" href="#">Medical treatment</a></li>
+                <li><a class="footerlinks footeralign" href="#">Terms & conditions</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <br>
+            <div class="widget">
+              <h5>Heal Vibe HOSPITAL</h5>
+              <p class="textwhite footeralign">
+                Our vision is to ensure consistent quality and advanced care and take the latest medical technologies to Tier 2 and Tier 3 cities.
+              </p>
+              <ul class="listedited">
+                <li class="textwhite footeralign">
+                  <span class="fa-stack fa-lg">
+                <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+              </span> Monday - Saturday, 8am to 10pm
+                </li>
+                <li class="textwhite footeralign">
+                  <span class="fa-stack fa-lg">
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+              </span> +91 88654 78892
+                </li>
+                <li class="textwhite footeralign">
+                  <span class="fa-stack fa-lg">
+                <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+              </span> info@hospitals.com
+                </li>
+    
+              </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <br>
+            <div class="widget">
+              <h5>Our location</h5>
+              <p class="textwhite footeralign">The ABC, Greater Kailash, Delhi,110048</p>
+    
+            </div>
+            <div class="widget">
+              <h5>Follow us</h5>
+              <ul class="company-social listedited" >
+                <li class="social-facebook "><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="social-twitter"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li class="social-google"><a href="https://gmail.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li class="social-vimeo"><a href="https://vimeo.com/" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+                <li class="social-dribble"><a href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+              </ul>
+              <br>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>    
+    <script>
+        function alphaOnly(event) {
+            var key = event.keyCode;
+            return ((key >= 65 && key <= 90) || key == 8 || key == 32);
+        };
+    </script>
+    
+
+</body>
+</html>

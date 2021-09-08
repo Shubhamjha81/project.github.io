@@ -1,0 +1,68 @@
+<?php
+    include "bloglogic.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heal Vibe Blogs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="mystyle.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div class="container navcont">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="../index.html" class="navbar-brand"><h5 class="titletext"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp HEAL VIBE HOSPITAL</h5></a>
+      <button class="navbar-toggler navbarbtn" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>    
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu" >
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item litem"> <a href="../index.html" class="nav-link"><p class="titletextp">Home</p></a> </li>
+          <li class="nav-item litem"> <a href="../services/services.html" class="nav-link"><p class="titletextp">Services</p></a></li>
+          <li class="nav-item litem"> <a href="#" class="nav-link active"><p class="titletextp">Blog</p></a> </li>
+          <li class="nav-item litem"> <a href="../account/account.html" class="nav-link"><p class="titletextp">Account</p></a></li>
+          <li class="nav-item litem"> <a href="../contact/contact.html" class="nav-link"><p class="titletextp">Contact</p></a> </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+<br>
+
+<div class="container text-center">
+    <a href="createblog.html" class="btn btn-outline-light addbtn">Add a new Blog</a>
+</div>
+<br><br>
+<div class="container">
+    <?php foreach($query as $q){ ?>
+        <div class="post-box">
+            <h3 class="blog-title"><?php echo $q['title'];?></h3>
+            <p class="blog-content"> By <?php echo $q['uname'] ?> <br><br>
+                <?php echo $q['content'];?></p>
+                <div class="deletebtn">
+                  <a href="blog.php?id=<?php echo $q['id']?>" class="btn btn-danger btn-sm" name="delete">Delete</a>
+                </div>
+        </div>    
+        <br><br>
+        
+    <?php }?>
+        
+</div>
+
+<!--  JQuery Animations  -->
+<script>
+  $(window).on('load',function(){
+    $('.post-box').animate({'right':'50px' ,'opacity':1}, 1800);
+});
+</script>
+
+</body>
+</html>
